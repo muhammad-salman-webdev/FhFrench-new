@@ -1756,6 +1756,10 @@
     .owner_rects::before {
         bottom: -110px;
     }
+
+    .container:has(.outer__header) {
+        padding: 0 20px;
+    }
 }
 
 @media (max-width: 540px) {
@@ -1821,11 +1825,18 @@
     }
 
     .complex__logo>a .desc {
-        display: none;
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 1.2;
     }
 
     .hero__section .image .top__part>span {
         position: static;
+    }
+
+    .complex__logo:has(.desc) img {
+        width: 120px;
+        margin: 0 0 10px;
     }
 }
 

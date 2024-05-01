@@ -2960,6 +2960,7 @@ header .outer__header .menu>a {
     display: block;
     width: 100vw;
     transition: all .4s ease;
+    background: transparent;
 }
 
 .hero__section .btns>a span,
@@ -3017,7 +3018,8 @@ i {
     transition: .3s ease all;
     opacity: 0;
     font-size: 50px;
-    color: var(--primary)
+    color: var(--primary);
+    transition: all .4s ease;
 }
 
 .container:has(.outer__hero) {
