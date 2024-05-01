@@ -8,20 +8,26 @@
     <title>Jen Cookke | FhFrench</title>
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon" />
-
-    <!-- Google Fonts CDN -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900|Adamina|Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900|Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900|Bebas+Neue&display=swap"
-      rel="stylesheet" />
-
-    <!-- CSS Global Theme File -->
-    <link rel="stylesheet" href="css/slick-theme.css" />
+      rel="shortcut icon"
+      href="assets/images/logos/logo-square.svg"
+      type="image/x-icon" />
 
     <!-- Custom CSS File -->
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- Resonsive CSS -->
+    <link rel="stylesheet" href="assets/css/responsive.css" />
   </head>
   <body>
+    <!-- ################# -->
+    <!-- Loading Animation -->
+    <!-- ################# -->
+    <div id="loading-container">
+      <img src="assets/images/svg/loading.gif" alt="Loading Animation" />
+    </div>
+    <!-- ################# -->
+    <!-- Loading Animation -->
+    <!-- ################# -->
     <!-- -------------------------- -->
     <!-- Header Section Starts Here -->
     <!-- -------------------------- -->
@@ -36,13 +42,13 @@
           <a href="index.html">HOME</a>
         </li>
         <li>
-          <a href="owner.html">ACADEMIC</a>
+          <a href="owner.html" class="active">ACADEMIC</a>
         </li>
         <li>
-          <a href="french.html">DEVELOPMENT</a>
+          <a href="fh-french.html">DEVELOPMENT</a>
         </li>
         <li>
-          <a href="contactus.html">CONSULTING</a>
+          <a href="consulting.html">CONSULTING</a>
         </li>
       </ul>
     </div>
@@ -54,7 +60,7 @@
           <!-- Logo -->
           <div class="complex__logo">
             <a href="#">
-              <img src="img/logotitle.svg" alt="logotitle" />
+              <img src="assets/images/logos/jen-cookke.svg" alt="Jen Cookke" />
               <span class="spacer"></span>
               <p class="desc">
                 ONE OF THE BEST
@@ -87,56 +93,49 @@
     <!-- Owner Information Section Starts Here -->
     <!-- ------------------------------------- -->
 
-    <div class="owner__wrapper">
-      <div class="container">
-        <div class="outer__owner">
-          <div class="top__owner">
-            <div class="top__box">
-              <!-- Rect Items -->
-              <div class="top__images">
-                <div class="rects">
-                  <div class="rect__small"></div>
-                  <div class="rect__long"></div>
-                </div>
-                <img src="img/image 4.png" alt="image" />
+    <section class="owner-section-main">
+      <div class="owner-section">
+        <!-- Flowers on the Background -->
+        <div class="bg_imgs">
+          <img src="assets/images/svg/flower.png" alt="#" class="img1" />
+          <img src="assets/images/svg/flower.png" alt="#" class="img2" />
+        </div>
+        <div class="owner-container">
+          <!-- Hero Rects -->
+          <div class="owner_rects">
+            <img src="assets/images/building-images/13.webp" alt="#" />
+          </div>
+          <!-- Owner Details -->
+          <div class="owner-details">
+            <h1>Jen Cookke</h1>
+            <div class="info">
+              <!-- Image -->
+              <div class="img">
+                <img src="assets/images/onwer/3.webp" alt="#" />
               </div>
-
-              <!-- Customized Name with colored Spells -->
-              <span>
-                J
-                <span>e</span>
-                n C
-                <span>o</span>
-                o
-                <span>k</span>
-                k
-                <span>e</span>
-              </span>
-            </div>
-
-            <!-- Owner Images -->
-            <div class="bottom">
-              <div class="images">
-                <img src="img/image2.webp" alt="image" />
-                <img src="img/image3.webp" alt="image" />
-              </div>
-
-              <!-- Owner Information -->
-              <div class="desc">
-                <h6>Jen Cookke</h6>
-                <span>FH French CEO</span>
+              <!-- Name + Description -->
+              <div class="text">
+                <h3>Jen Cookke</h3>
+                <span>SH French CEO</span>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat.
+                  Discover Jen Cookke: A dynamic real estate visionary with a
+                  rich background spanning corporate leadership and
+                  entrepreneurial success. Jen spent the first part of her
+                  career working for corporate offices of two Fortune 500
+                  headquarters in executive leadership and went on to transition
+                  to a career in entrepreneurship, building a portfolio of
+                  companies and commercial real estate investments throughout
+                  New England.
+                  <br />
+                  <br />
+                  Read more to learn of Jen's expertise in the industry.
                 </p>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
     <!-- ----------------------------------- -->
     <!-- Owner Information Section Ends Here -->
@@ -336,7 +335,7 @@
             <!-- Experience Item -->
             <div class="elem">
               <div class="desc">
-                <img src="img/leaf1.svg" alt="leaf" />
+                <img src="assets/images/svg/leaf-orange.svg" alt="leaf" />
                 <p>
                   FH French Co. Inc | CEO and Founder
                   <br />
@@ -376,7 +375,9 @@
               </div>
               <!-- Image -->
               <div class="media">
-                <img src="img/experience1.svg" alt="experience" />
+                <img
+                  src="assets/images/logos/logo-shadow.svg"
+                  alt="experience" />
               </div>
             </div>
 
@@ -384,12 +385,12 @@
             <div class="elem">
               <div class="media">
                 <img
-                  src="img/experience2.webp"
+                  src="assets/images/other-logos/liberty-mutual.webp"
                   alt="experience"
                   style="max-width: 260px" />
               </div>
               <div class="desc">
-                <img src="img/leaf2.svg" alt="leaf" />
+                <img src="assets/images/svg/leaf-yellow.svg" alt="leaf" />
                 <p>
                   Liberty Mutual | Vice President of Corporate Real Estate
                   Services
@@ -422,7 +423,7 @@
             <!-- Experience Item -->
             <div class="elem">
               <div class="desc">
-                <img src="img/leaf3.svg" alt="leaf" />
+                <img src="assets/images/svg/leaf-blue.svg" alt="leaf" />
                 <p>
                   Starwood Hotel Corporation | Director of New Business
                   Development
@@ -446,7 +447,7 @@
               </div>
               <div class="media">
                 <img
-                  src="img/experience3.webp"
+                  src="assets/images/other-logos/starwood.webp"
                   alt="experience"
                   style="max-width: 440px" />
               </div>
@@ -508,12 +509,10 @@
                     <span>2021 - (2024)</span>
                   </div>
                   <div class="right">
-                    <p>Doctoral Candidate Vanderbilt</p>
-                    <ul>
-                      <li>Lorem ipsum dolor </li>
-                      <li>sit amet, consectetur</li>
-                      <li>adipisicing elit. Quidem voluptatibus, </li>
-                    </ul>
+                    <p>
+                      Doctoral Candidate <br />
+                      Vanderbilt
+                    </p>
                   </div>
                 </div>
 
@@ -523,12 +522,10 @@
                     <span>2000 - 2002</span>
                   </div>
                   <div class="right">
-                    <p>Master of Science  M.I.T.</p>
-                    <ul>
-                      <li>Lorem ipsum dolor </li>
-                      <li>sit amet, consectetur</li>
-                      <li>adipisicing elit. Quidem voluptatibus, </li>
-                    </ul>
+                    <p>
+                      Master of Science <br />
+                      M.I.T.
+                    </p>
                   </div>
                 </div>
 
@@ -538,12 +535,10 @@
                     <span>1990 - 1992</span>
                   </div>
                   <div class="right">
-                    <p>Master of Business Administration Bryant University</p>
-                    <ul>
-                      <li>Lorem ipsum dolor </li>
-                      <li>sit amet, consectetur</li>
-                      <li>adipisicing elit. Quidem voluptatibus, </li>
-                    </ul>
+                    <p>
+                      Master of Business Administration <br />
+                      Bryant University
+                    </p>
                   </div>
                 </div>
 
@@ -553,12 +548,10 @@
                     <span>1987 - 1988</span>
                   </div>
                   <div class="right">
-                    <p>Bachelor of Science Boston University</p>
-                    <ul>
-                      <li>Lorem ipsum dolor </li>
-                      <li>sit amet, consectetur</li>
-                      <li>adipisicing elit. Quidem voluptatibus, </li>
-                    </ul>
+                    <p>
+                      Bachelor of Science Boston <br />
+                      University
+                    </p>
                   </div>
                 </div>
               </div>
@@ -568,16 +561,13 @@
             <div class="media block1">
               <div class="image">
                 <div class="box">
-                  <img src="img/educationimage.webp" alt="education" />
+                  <img
+                    src="assets/images/building-images/12.webp"
+                    alt="education" />
                 </div>
               </div>
               <div class="desc">
-                <h6>MIT - Massachusetts Insitiue of Technology</h6>
-                <p>
-                  Jen Cookke Lorem ipsum dolor sit amet, consectetur adipiscing
-                  elit, sed do eiusmod tempor incididunt ut labore et dolore
-                  magna aliqua.
-                </p>
+                <h6>Doctoral Candidate Vanderbilt</h6>
               </div>
             </div>
 
@@ -585,16 +575,13 @@
             <div class="media block2" style="display: none">
               <div class="image">
                 <div class="box">
-                  <img src="img/educationimage.webp" alt="education" />
+                  <img
+                    src="assets/images/building-images/1.webp"
+                    alt="education" />
                 </div>
               </div>
               <div class="desc">
-                <h6>MIT - Massachusetts Insitiue of Technology</h6>
-                <p>
-                  Jen Cookke Lorem ipsum dolor sit amet, consectetur adipiscing
-                  elit, sed do eiusmod tempor incididunt ut labore et dolore
-                  magna aliqua.
-                </p>
+                <h6> Master of Science M.I.T. </h6>
               </div>
             </div>
 
@@ -602,16 +589,13 @@
             <div class="media block3" style="display: none">
               <div class="image">
                 <div class="box">
-                  <img src="img/educationimage.webp" alt="education" />
+                  <img
+                    src="assets/images/building-images/6.webp"
+                    alt="education" />
                 </div>
               </div>
               <div class="desc">
-                <h6>MIT - Massachusetts Insitiue of Technology</h6>
-                <p>
-                  Jen Cookke Lorem ipsum dolor sit amet, consectetur adipiscing
-                  elit, sed do eiusmod tempor incididunt ut labore et dolore
-                  magna aliqua.
-                </p>
+                <h6> Master of Business Administration Bryant University </h6>
               </div>
             </div>
 
@@ -619,16 +603,13 @@
             <div class="media block4" style="display: none">
               <div class="image">
                 <div class="box">
-                  <img src="img/educationimage.webp" alt="education" />
+                  <img
+                    src="assets/images/building-images/5.webp"
+                    alt="education" />
                 </div>
               </div>
               <div class="desc">
-                <h6>MIT - Massachusetts Insitiue of Technology</h6>
-                <p>
-                  Jen Cookke Lorem ipsum dolor sit amet, consectetur adipiscing
-                  elit, sed do eiusmod tempor incididunt ut labore et dolore
-                  magna aliqua.
-                </p>
+                <h6>Bachelor of Science Boston University</h6>
               </div>
             </div>
           </div>
@@ -657,12 +638,12 @@
             <!-- Footer Info -->
             <div class="left">
               <a href="#">
-                <img src="img/logo.png" alt="log" />
+                <img src="assets/images/logos/logo-square.svg" alt="log" />
               </a>
               <ul>
-                <li>99 Address St, local Rl 02860</li>
-                <li>(401-999-9999)</li>
-                <li>Business Email@gmail.com</li>
+                <li> <a href="#"> 99 Address St, local Rl 02860</a> </li>
+                <li> <a href="#"> (401-999-9999)</a> </li>
+                <li> <a href="#"> Business Email@gmail.com</a></li>
               </ul>
             </div>
 
@@ -670,13 +651,19 @@
             <div class="right">
               <ul>
                 <li>
-                  <a href="#"><img src="img/soc1.svg" alt="soc" /></a>
+                  <a href="#">
+                    <img src="assets/images/svg/facebook-icon.svg" alt="soc" />
+                  </a>
                 </li>
                 <li>
-                  <a href="#"><img src="img/soc2.svg" alt="soc" /></a>
+                  <a href="#">
+                    <img src="assets/images/svg/twitter-icon.svg" alt="soc" />
+                  </a>
                 </li>
                 <li>
-                  <a href="#"><img src="img/soc3.svg" alt="soc" /></a>
+                  <a href="#">
+                    <img src="assets/images/svg/pinterest-icon.svg" alt="soc" />
+                  </a>
                 </li>
               </ul>
             </div>
@@ -686,7 +673,9 @@
           <div class="bottom__footer">
             <ul>
               <li>&copy; Copyright 2023</li>
-              <li>FH FRENCH</li>
+              <li>
+                <a href="#">FH FRENCH</a>
+              </li>
               <li>All rights reserved</li>
             </ul>
           </div>
@@ -695,15 +684,15 @@
     </footer>
 
     <!-- -------------------------- -->
-    <!-- Footer Section Starts Here -->
+    <!-- Footer Section Ends Here -->
     <!-- -------------------------- -->
   </body>
 
   <!-- JavaScript CDNs -->
-  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
   <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
 
   <!-- JavaScript Local Files -->
-  <script src="js/slick.min.js"></script>
-  <script src="js/script.js"></script>
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/slick.min.js"></script>
+  <script src="assets/js/script.js"></script>
 </html>

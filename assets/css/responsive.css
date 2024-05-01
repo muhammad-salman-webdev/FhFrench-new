@@ -42,10 +42,7 @@
     }
 
     .images__wrapper .image {
-        display: block !important
-    }
-
-    .images__wrapper .image {
+        display: block !important;
         padding-bottom: 175px !important;
         padding-top: 495px !important
     }
@@ -98,15 +95,18 @@
         display: -ms-inline-flexbox;
         display: inline-flex;
         position: absolute;
-        right: 0%;
-        bottom: -140px;
-        top: 0;
-        width: 100%;
+        bottom: 0;
+        right: 0;
+        width: 400px;
     }
 
     .no__image {
         background: none !important;
-        background-color: #E0E0E0 !important
+        background-color: #E0E0E0 !important;
+    }
+
+    .hero__section .image {
+        background-color: #E0E0E0 !important;
     }
 
     .hero__section .image .top__part>p {
@@ -116,16 +116,6 @@
     .hero__section .image .top__part>h2 {
         font-size: 40px;
         line-height: 48px
-    }
-
-    .hero__section .image .bottom__desc {
-        left: 25%;
-        top: 60%
-    }
-
-    .hero__section .image .bottom__desc p {
-        font-size: 26px;
-        line-height: 34px
     }
 
     .hero__section .btns {
@@ -140,6 +130,11 @@
     .hero__section {
         margin-bottom: 60px
     }
+
+    .owner-section {
+        width: 100%;
+        overflow: hidden;
+    }
 }
 
 @media (max-width: 1280px) {
@@ -150,6 +145,10 @@
     .education__roadmap .outer__education .inner>.media .image:before {
         top: -15px;
         left: -15px
+    }
+
+    .container {
+        padding: 0 50px;
     }
 }
 
@@ -170,11 +169,6 @@
 
     .hero__section .image .top__part>span {
         left: 0;
-    }
-
-    .discover__wrapper .outer__discover .right__side {
-        max-width: 100%;
-        width: calc(100% - 450px)
     }
 
     .capabilities .outer__capabilities .outer {
@@ -199,22 +193,9 @@
         margin-right: 30px
     }
 
-    .discover__wrapper {
-        padding-bottom: 100px
-    }
-
     .discover__wrapper .outer__discover .left__side>p {
         font-size: 50px;
         line-height: 56px
-    }
-
-    .discover__wrapper .outer__discover .left__side {
-        max-width: 490px
-    }
-
-    .discover__wrapper .outer__discover .right__side {
-        padding-left: 70px;
-        left: -12%
     }
 
     .what__we--do .outer__what .grid>.elem {
@@ -249,11 +230,7 @@
     }
 
     .french__hero .outer__french>.desc {
-        margin-right: 60px
-    }
-
-    .french__hero {
-        padding-top: 240px
+        max-width: 50%;
     }
 
     .french__hero .outer__french>.desc>h2 {
@@ -280,8 +257,8 @@
         max-width: 400px
     }
 
-    .french__hero .outer__french .media>img {
-        max-width: 290px
+    .french__hero .outer__french .media {
+        min-width: unset;
     }
 
     .french__hero .outer__french .media>p {
@@ -410,14 +387,6 @@
         padding-bottom: 60px
     }
 
-    .discover__wrapper .outer__discover .right__side {
-        left: -50px
-    }
-
-    .discover__wrapper .outer__discover .right__side {
-        margin-top: 80px
-    }
-
     header .outer__header .menu>a {
         min-height: 90px
     }
@@ -437,7 +406,7 @@
     }
 
     .image>img {
-        width: 1140px;
+        width: 350px;
     }
 
     .what__we--do .outer__what .grid>.elem>p {
@@ -470,7 +439,46 @@
     display: none
 }
 
+@media (max-width: 1100px) {
+    .company_details-container {
+        column-gap: 70px;
+    }
+
+    .company_details>h1 {
+        font-size: 36px;
+    }
+
+    .owner_rects {
+        transform: scale(0.8);
+        margin: -40px auto -40px;
+    }
+
+    .owner-details>h1 {
+        font-size: 50px;
+    }
+
+    .owner-details .info {
+        padding-left: 40px;
+    }
+
+    .owner-details .img img {
+        width: 213px;
+        height: unset;
+    }
+}
+
 @media (max-width: 991px) {
+    .company_details-container {
+        flex-direction: column;
+        row-gap: 50px;
+    }
+
+    .company_contact {
+        border: none;
+        border-bottom: 2px solid #0B3E6336;
+        padding: 0 0 50px;
+    }
+
     .education__roadmap .outer__education .inner .roadmap .title {
         display: none
     }
@@ -492,9 +500,8 @@
 
     .mobile__switcher .slick-prev {
         left: -40px;
-        min-width: 24px;
-        min-height: 35px;
-        background: url("../img/arrslideleft.png");
+        min-width: 20px;
+        background: url("../images/svg/arrslideleft.png");
         background-repeat: no-repeat;
         background-size: contain;
         background-position: center
@@ -506,9 +513,8 @@
 
     .mobile__switcher .slick-next {
         right: -40px;
-        min-width: 24px;
-        min-height: 35px;
-        background: url("../img/arrslideright.png");
+        min-width: 20px;
+        background: url("../images/svg/arrslideright.png");
         background-repeat: no-repeat;
         background-size: contain;
         background-position: center
@@ -545,10 +551,6 @@
         line-height: 22px
     }
 
-    .hero__section {
-        margin-bottom: 30px
-    }
-
     .hero__section .image .top__part>p,
     .hero__section .image .top__part>h2 {
         font-size: 32px;
@@ -572,33 +574,16 @@
     }
 
     .discover__wrapper .outer__discover .left__side {
-        max-width: 100%;
-        width: 100%;
+        max-width: 95%;
+        width: 96%;
         padding: 35px;
         padding-right: 120px
     }
 
     .discover__wrapper .outer__discover .right__side {
-        margin-top: 30px;
-        margin-left: auto;
-        max-width: 100%;
-        left: 0px;
-        width: 100%;
-        padding: 35px 60px
-    }
-
-    .discover__wrapper .outer__discover .right__side:before {
-        content: "";
-        position: absolute;
-        left: 100%;
-        width: 15px;
-        height: 100%;
-        background-color: #FEF3E9;
-        top: 0px
-    }
-
-    .discover__wrapper {
-        padding-bottom: 50px
+        position: static;
+        margin: 1% 0 0 auto;
+        width: 96%;
     }
 
     .modal__wrapper>.inner__modal .modal__box>.element__service>h6 {
@@ -698,12 +683,7 @@
     }
 
     .french__hero {
-        padding-top: 195px;
         padding-bottom: 50px
-    }
-
-    .french__hero .outer__french .media>img {
-        max-width: 250px
     }
 
     .french__hero .outer__french .media>p {
@@ -1046,7 +1026,17 @@
     }
 }
 
+@media (max-width:950px) {
+    .owner-details .img img {
+        margin: 0px -10px 0px -70px;
+    }
+}
+
 @media (max-width: 840px) {
+    .discover__wrapper {
+        padding-bottom: 80px;
+    }
+
     .capabilities .outer__capabilities .outer .active__element .element .media img {
         min-width: 130px;
         max-width: 130px
@@ -1143,7 +1133,7 @@
         left: 10px;
         min-width: 24px;
         min-height: 35px;
-        background: url("../img/arrslideleft.png");
+        background: url("../images/svg/arrslideleft.png");
         background-repeat: no-repeat;
         background-size: contain;
         background-position: center
@@ -1157,7 +1147,7 @@
         right: 10px;
         min-width: 24px;
         min-height: 35px;
-        background: url("../img/arrslideright.png");
+        background: url("../images/svg/arrslideright.png");
         background-repeat: no-repeat;
         background-size: contain;
         background-position: center
@@ -1188,6 +1178,29 @@
 }
 
 @media (max-width: 767px) {
+    .consulting_hero-section {
+        padding-bottom: 50px;
+        margin-bottom: 60px;
+    }
+
+    .company_logos-container {
+        margin-bottom: 60px;
+    }
+
+    .consulting-headings h1 {
+        font-size: 60px;
+    }
+
+    .company_details>h1 {
+        font-size: 28px;
+        line-height: 1.6;
+    }
+
+    ul.company_features {
+        flex-wrap: wrap;
+        gap: 50px;
+    }
+
     .image .btn>a {
         min-width: 200px;
         min-height: 50px;
@@ -1244,10 +1257,6 @@
     .slider__wrapper .elem__slide>a p {
         font-size: 21px;
         line-height: 28px
-    }
-
-    .french__hero {
-        padding-top: 140px
     }
 
     .french__hero .outer__french>.desc>h2 {
@@ -1460,6 +1469,101 @@
     .slider__wrapper {
         padding-bottom: 40px
     }
+
+    .image>img {
+        width: 275px;
+    }
+
+    .hero__section .image .top__part>p {
+        font-size: 28px;
+        line-height: 1.2;
+    }
+
+    .hero__section .image .top__part>span {
+        font-size: 34px;
+    }
+
+    .french__hero .outer__french .media>img {
+        width: 50%;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .owner-details .img img {
+        width: 340px;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .owner-details .info {
+        padding-left: 0;
+        flex-direction: column;
+    }
+
+    .owner-details .text h3 {
+        display: none;
+    }
+
+    .owner-details>h1 {
+        font-size: 42px;
+    }
+
+    .owner-details .text span {
+        width: 100%;
+        text-align: center;
+        display: block;
+        margin: 0 auto 50px;
+        top: 0;
+        font-family: 'Montserrat';
+        font-size: 28px;
+        font-weight: 600;
+    }
+
+    .owner-section::after {
+        width: 70%;
+    }
+
+    .owner-section::before {
+        right: 5%
+    }
+
+    .owner_rects {
+        align-items: self-start;
+    }
+
+    .owner_rects img {
+        content: '';
+        width: 500px;
+        height: unset;
+        left: 120px;
+    }
+
+    .owner_rects {
+        margin: -120px auto 150px -40px;
+    }
+
+    .owner_rects::after {
+        left: 30px;
+        top: 10px;
+    }
+
+    .owner_rects::before {
+        left: -30px;
+        bottom: -150px;
+    }
+
+    .owner-details::before {
+        left: -40px;
+    }
+
+    .bg_imgs .img1 {
+        left: -170px;
+        top: -50px;
+    }
+
+    .bg_imgs .img2 {
+        top: 550px
+    }
 }
 
 @media (max-width: 640px) {
@@ -1468,6 +1572,10 @@
         position: relative;
         border-radius: 20px;
         box-shadow: 0px 0px 4px 3px #ff6338;
+    }
+
+    .french__hero .outer__french .media>img {
+        width: 70%;
     }
 
     .owner__wrapper .outer__owner .top__owner .bottom .images {
@@ -1500,7 +1608,6 @@
     }
 
     .image>img {
-        right: 5%;
         max-width: 280px
     }
 
@@ -1599,9 +1706,76 @@
     .properties__wrapper .outer__properties .top .left:last-child {
         margin-bottom: 0px
     }
+
+    .image .btn>a {
+        margin-bottom: 0;
+    }
+
+    .hero__section .image .top__part>span {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 600px) {
+    .hero__section .image .top__part>p {
+        font-size: 20px;
+        line-height: 1.3;
+        padding-right: 130px;
+    }
+
+    .hero__section .image .top__part>span {
+        font-size: 24px;
+    }
+
+    .image>img {
+        max-width: 220px;
+    }
+
+    .discover__wrapper .outer__discover .right__side {
+        padding: 40px 50px 40px 60px;
+    }
+
+    .french__hero .outer__french .media>img {
+        width: 80%;
+    }
+
+    .french__hero {
+        padding-top: 50px;
+    }
+
+    .owner_rects img {
+        left: 0;
+        width: 90vw;
+    }
+
+    .owner_rects::after {
+        left: 240px;
+        top: -50px;
+    }
+
+    .owner_rects::before {
+        bottom: -110px;
+    }
 }
 
 @media (max-width: 540px) {
+    .consulting-headings h1 {
+        font-size: 50px;
+    }
+
+    .consulting-headings .cons_desc img {
+        left: -25px;
+    }
+
+    .consulting-headings .cons_desc span {
+        padding-left: 55px;
+        font-size: 16px;
+    }
+
+    .consulting-headings .cons_desc::before {
+        display: none;
+    }
+
     .images__wrapper .image {
         padding-top: 340px !important
     }
@@ -1647,7 +1821,11 @@
     }
 
     .complex__logo>a .desc {
-        margin-top: 5px
+        display: none;
+    }
+
+    .hero__section .image .top__part>span {
+        position: static;
     }
 }
 
@@ -1662,12 +1840,6 @@
 
     .image>img {
         max-width: 220px
-    }
-
-    .hero__section .image .top__part>p,
-    .hero__section .image .top__part>h2 {
-        font-size: 22px;
-        line-height: 28px
     }
 
     .hero__section .image .bottom__desc p {
@@ -1688,10 +1860,6 @@
     .discover__wrapper .outer__discover .left__side>p {
         font-size: 32px;
         line-height: 38px
-    }
-
-    .discover__wrapper .outer__discover .right__side {
-        padding: 25px 40px
     }
 
     .what__we--do .outer__what>.top {
@@ -1805,6 +1973,40 @@
 
     footer .outer__footer .bottom__footer>ul>li {
         margin-right: 0px
+    }
+
+    .owner-details .img img {
+        width: 70vw;
+    }
+
+    .owner_rects {
+        transform: scale(1);
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .owner_rects img {
+        margin: 0 auto;
+        position: static;
+        display: block;
+    }
+
+    .owner_rects::before {
+        width: 160px;
+        height: 90px;
+        bottom: -50px;
+        left: -60px;
+    }
+
+    .owner_rects::after {
+        left: 40px;
+        top: -50px;
+        width: 410px;
+        height: 68vw;
+    }
+
+    .education__wrapper .outer__education .inner>.elem .content:before {
+        left: -30px;
     }
 }
 

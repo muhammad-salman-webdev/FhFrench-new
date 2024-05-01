@@ -10,16 +10,27 @@
     <!-- Favicon -->
     <link
       rel="shortcut icon"
-      href="assets/images/logos/logo.png"
+      href="assets/images/logos/logo-square.svg"
       type="image/x-icon" />
 
     <!-- Custom CSS File -->
     <link rel="stylesheet" href="assets/css/style.css" />
-
     <!-- Resonsive CSS -->
     <link rel="stylesheet" href="assets/css/responsive.css" />
   </head>
   <body>
+    <!-- ################# -->
+    <!-- Loading Animation -->
+    <!-- ################# -->
+
+    <div id="loading-container">
+      <img src="assets/images/svg/loading.gif" alt="Loading Animation" />
+    </div>
+
+    <!-- ################# -->
+    <!-- Loading Animation -->
+    <!-- ################# -->
+
     <!-- -------------------------- -->
     <!-- Header Section Starts Here -->
     <!-- -------------------------- -->
@@ -37,10 +48,10 @@
           <a href="owner.html">ACADEMIC</a>
         </li>
         <li>
-          <a href="french.html">DEVELOPMENT</a>
+          <a href="fh-french.html">DEVELOPMENT</a>
         </li>
         <li>
-          <a href="contactus.html">CONSULTING</a>
+          <a href="consulting.html">CONSULTING</a>
         </li>
       </ul>
     </div>
@@ -91,9 +102,9 @@
         <!-- Image Item -->
         <div
           class="image image2"
-          style="background: url('assets/images/building-images/2.webp')">
+          style="background: url('assets/images/building-images/13.webp')">
           <div class="btn">
-            <a href="french.html">DEVELOPMENT</a>
+            <a href="fh-french.html">DEVELOPMENT</a>
           </div>
         </div>
 
@@ -135,7 +146,7 @@
             <span> “A Scholarly Practitioner” </span>
           </div>
           <div class="btn">
-            <a href="contactus.html">CONSULTING</a>
+            <a href="consulting.html">CONSULTING</a>
           </div>
         </div>
       </div>
@@ -145,7 +156,7 @@
         <div class="outer__hero">
           <div class="btns">
             <!-- Btn -->
-            <a href="french.html" class="current" data-image="image2">
+            <a href="fh-french.html" class="current" data-image="image2">
               <span> DEVELOPMENT </span>
               <i class="fa-solid fa-right-long"></i>
             </a>
@@ -157,7 +168,7 @@
             </a>
 
             <!-- Btn -->
-            <a href="contactus.html" data-image="image3">
+            <a href="consulting.html" data-image="image3">
               <span> CONSULTING </span>
               <i class="fa-solid fa-right-long"></i>
             </a>
@@ -187,10 +198,10 @@
             <p>
               <span>Let’s</span>
               think
-              <span>together.</span>
+              <span>together</span>
             </p>
             <p>Let’s <span>Work</span> together</p>
-            <img src="img/circle.svg" alt="circle" />
+            <img src="assets/images/svg/circle.svg" alt="circle" />
           </div>
           <!-- Quote Description -->
           <div class="right__side">
@@ -261,12 +272,12 @@
             <!-- Services Items Descriptive Container -->
             <div class="active__element">
               <!-- Services Item Container Background Image -->
-              <img src="img/brandimage.png" alt="brandimage" />
+              <img src="assets/images/logos/logo-brand.png" alt="brandimage" />
 
               <!-- Service Item -->
               <div class="element element2">
                 <div class="media">
-                  <img src="img/icon.svg" alt="icon" />
+                  <img src="assets/images/svg/icon.svg" alt="icon" />
                 </div>
                 <div class="desc">
                   <h6>Asset Management</h6>
@@ -286,7 +297,7 @@
               <!-- Service Item -->
               <div class="element element1" style="display: none">
                 <div class="media">
-                  <img src="img/icon.svg" alt="icon" />
+                  <img src="assets/images/svg/icon.svg" alt="icon" />
                 </div>
                 <div class="desc">
                   <h6>Development</h6>
@@ -306,7 +317,7 @@
               <!-- Service Item -->
               <div class="element element3" style="display: none">
                 <div class="media">
-                  <img src="img/icon.svg" alt="icon" />
+                  <img src="assets/images/svg/icon.svg" alt="icon" />
                 </div>
                 <div class="desc">
                   <h6>Brokerage and Leasing</h6>
@@ -326,7 +337,7 @@
               <!-- Service Item -->
               <div class="element element4" style="display: none">
                 <div class="media">
-                  <img src="img/icon.svg" alt="icon" />
+                  <img src="assets/images/svg/icon.svg" alt="icon" />
                 </div>
                 <div class="desc">
                   <h6>Investment Management</h6>
@@ -346,7 +357,7 @@
               <!-- Service Item -->
               <div class="element element5" style="display: none">
                 <div class="media">
-                  <img src="img/icon.svg" alt="icon" />
+                  <img src="assets/images/svg/icon.svg" alt="icon" />
                 </div>
                 <div class="desc">
                   <h6>Construction services</h6>
@@ -389,12 +400,12 @@
             <!-- Footer Info -->
             <div class="left">
               <a href="#">
-                <img src="img/logo.png" alt="log" />
+                <img src="assets/images/logos/logo-square.svg" alt="log" />
               </a>
               <ul>
-                <li>99 Address St, local Rl 02860</li>
-                <li>(401-999-9999)</li>
-                <li>Business Email@gmail.com</li>
+                <li> <a href="#"> 99 Address St, local Rl 02860</a> </li>
+                <li> <a href="#"> (401-999-9999)</a> </li>
+                <li> <a href="#"> Business Email@gmail.com</a></li>
               </ul>
             </div>
 
@@ -402,13 +413,19 @@
             <div class="right">
               <ul>
                 <li>
-                  <a href="#"><img src="img/soc1.svg" alt="soc" /></a>
+                  <a href="#">
+                    <img src="assets/images/svg/facebook-icon.svg" alt="soc" />
+                  </a>
                 </li>
                 <li>
-                  <a href="#"><img src="img/soc2.svg" alt="soc" /></a>
+                  <a href="#">
+                    <img src="assets/images/svg/twitter-icon.svg" alt="soc" />
+                  </a>
                 </li>
                 <li>
-                  <a href="#"><img src="img/soc3.svg" alt="soc" /></a>
+                  <a href="#">
+                    <img src="assets/images/svg/pinterest-icon.svg" alt="soc" />
+                  </a>
                 </li>
               </ul>
             </div>
@@ -418,7 +435,9 @@
           <div class="bottom__footer">
             <ul>
               <li>&copy; Copyright 2023</li>
-              <li>FH FRENCH</li>
+              <li>
+                <a href="#">FH FRENCH</a>
+              </li>
               <li>All rights reserved</li>
             </ul>
           </div>

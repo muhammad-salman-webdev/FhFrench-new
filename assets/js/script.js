@@ -62,7 +62,6 @@ $(document).ready(function () {
     }
     $(window).on("resize", function () {
       if ($(window).width() < 1360) {
-        console.log("hihi");
         if ($(".hero__section .images__wrapper").length) {
           if (!$(".images__wrapper").hasClass("slick-slider")) {
             $(".hero__section .images__wrapper").slick({
@@ -235,3 +234,56 @@ $(document).ready(function () {
     });
   }
 });
+
+// Loading Animation
+
+const animElem = document.getElementById("loading-container");
+function showLoadingAnimation() {
+  // Reseting the Gif
+  const gif = animElem.querySelector("img");
+  const src = gif.src;
+  gif.src = "";
+  gif.src = src;
+
+  // Display the loading animation container
+  animElem.style.display = "flex";
+  document.body.style.overflowY = "hidden";
+
+  // Hide the loading animation container after 3 seconds
+  setTimeout(function () {
+    animElem.style.opacity = "0";
+    setTimeout(function () {
+      animElem.style.display = "none";
+      document.body.style.overflowY = "initial";
+    }, 500);
+  }, 2700);
+}
+
+// #######
+
+// Function to check if the user has visited the website before and if more than 1 hour has passed since the previous visit
+function shouldShowAnimation() {
+  const lastVisitTime = localStorage.getItem("lastVisitTime");
+  if (!lastVisitTime) {
+    localStorage.setItem("lastVisitTime", new Date().getTime());
+    showLoadingAnimation();
+  } else {
+    // Check if more than 1 hour has passed since the last visit
+    const currentTime = new Date().getTime();
+    const timeDifference = currentTime - parseInt(lastVisitTime);
+    const oneHour = 60 * 60 * 1000;
+    if (timeDifference >= oneHour) {
+      localStorage.setItem("lastVisitTime", new Date().getTime());
+      showLoadingAnimation();
+    }
+  }
+}
+
+// If need to show animation on every visit
+const animateOnEveryVisit = false;
+
+if (animateOnEveryVisit) {
+  showLoadingAnimation();
+} else {
+  document.addEventListener("DOMContentLoaded", shouldShowAnimation());
+}

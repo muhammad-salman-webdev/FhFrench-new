@@ -4,6 +4,18 @@
 @import url('../icons/css/all.min.css');
 /* Abril Fatface Font  */
 @import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&family=Abril+Fatface&family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alef:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Adamina&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
     --primary: #ED7E1B;
@@ -13,7 +25,8 @@
 body,
 html {
     margin: 0px;
-    padding: 0px
+    padding: 0px;
+    scroll-behavior: smooth;
 }
 
 body * {
@@ -67,8 +80,13 @@ footer .outer__footer .top__footer>.left ul>li {
     margin-bottom: 15px;
     font-size: 23px;
     line-height: 28px;
-    font-weight: 500;
-    color: #FFFFFF
+    font-weight: 300;
+    font-family: 'Futura';
+}
+
+footer .outer__footer .top__footer>.left ul>li a {
+    color: white;
+    text-decoration: none;
 }
 
 footer .outer__footer .top__footer>.left ul>li:last-child {
@@ -104,7 +122,8 @@ footer .outer__footer .top__footer .right ul>li {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
-    margin-right: 25px
+    margin-right: 25px;
+    font-family: 'Futura';
 }
 
 footer .outer__footer .top__footer .right ul>li>a {
@@ -153,8 +172,15 @@ footer .outer__footer .bottom__footer>ul>li {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    font-weight: 500;
-    margin-right: 25px
+    font-weight: 400;
+    margin-right: 25px;
+    font-family: 'Futura';
+}
+
+footer .outer__footer .bottom__footer>ul>li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
 }
 
 footer .outer__footer .bottom__footer>ul>li:last-child {
@@ -922,10 +948,12 @@ header .outer__header .menu>a {
 
 .bio__wrapper .outer__bio .desc__elements .elem>p {
     margin: 0px;
-    font-size: 18px;
-    line-height: 25px;
     color: #022D4B;
-    font-weight: 400
+    font-family: 'Montserrat';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+    text-align: left;
 }
 
 .bio__wrapper .outer__bio .desc__elements .elem>p>span {
@@ -961,10 +989,12 @@ header .outer__header .menu>a {
 
 .bio__wrapper .outer__bio .tag>p {
     margin: 0px;
-    font-size: 20px;
-    line-height: 30px;
     color: #000000;
-    font-weight: 600
+    font-family: 'Montserrat';
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: left;
 }
 
 .bio__wrapper .outer__bio>.title {
@@ -983,10 +1013,12 @@ header .outer__header .menu>a {
 
 .bio__wrapper .outer__bio>.title>h2 {
     margin: 0px;
+    color: #000000;
+    font-family: 'Montserrat';
     font-size: 70px;
-    line-height: 68px;
     font-weight: 800;
-    color: #000000
+    line-height: 68px;
+    text-align: left;
 }
 
 .bio__wrapper .outer__bio>.title>span {
@@ -994,11 +1026,14 @@ header .outer__header .menu>a {
     display: -ms-inline-flexbox;
     display: inline-flex;
     margin-bottom: 20px;
-    font-size: 18px;
-    line-height: 25px;
     color: var(--primary);
     font-weight: 600;
-    letter-spacing: 3px
+    letter-spacing: 3px;
+    font-family: 'Montserrat';
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 25px;
+    letter-spacing: 3px;
 }
 
 .bio__wrapper .container,
@@ -1061,7 +1096,8 @@ header .outer__header .menu>a {
     line-height: 28px;
     color: #0D5183;
     font-weight: 400;
-    position: relative
+    position: relative;
+    font-family: 'Montserrat';
 }
 
 .education__wrapper .outer__education .inner>.elem .content .information>ul>li:before {
@@ -1081,7 +1117,8 @@ header .outer__header .menu>a {
     line-height: 28px;
     color: #0D5183;
     font-weight: 400;
-    margin-bottom: 25px
+    margin-bottom: 25px;
+    font-family: 'Montserrat';
 }
 
 .education__wrapper .outer__education .inner>.elem .content .information>p:last-child {
@@ -1104,7 +1141,7 @@ header .outer__header .menu>a {
     left: 0px;
     top: -43px;
     width: 300px;
-    height: 3px;
+    height: 2px;
     background-color: var(--secondary)
 }
 
@@ -1129,7 +1166,7 @@ header .outer__header .menu>a {
     color: var(--secondary);
     font-weight: bold;
     margin-bottom: 0px;
-    font-family: "Roboto", sans-serif
+    font-family: "Roboto", sans-serif;
 }
 
 .education__wrapper .outer__education .inner>.elem .title>span {
@@ -1162,7 +1199,8 @@ header .outer__header .menu>a {
     font-size: 48px;
     line-height: 68px;
     font-weight: 800;
-    color: #000000
+    color: #000000;
+    font-family: 'Montserrat';
 }
 
 .education__wrapper .outer__education>.top>span {
@@ -1173,8 +1211,9 @@ header .outer__header .menu>a {
     font-size: 18px;
     line-height: 25px;
     color: var(--primary);
-    font-weight: 600;
-    letter-spacing: 3px
+    font-weight: 500;
+    letter-spacing: 3px;
+    font-family: 'Montserrat'
 }
 
 .experience__wrapper {
@@ -1310,7 +1349,8 @@ header .outer__header .menu>a {
     line-height: 68px;
     color: #000000;
     font-weight: 800;
-    text-transform: uppercase
+    text-transform: uppercase;
+    font-family: 'Montserrat';
 }
 
 .experience__wrapper .outer__experience>.top>span {
@@ -1320,8 +1360,9 @@ header .outer__header .menu>a {
     color: var(--primary);
     margin-bottom: 23px;
     letter-spacing: 3px;
-    font-weight: 600;
-    text-transform: uppercase
+    font-weight: 500;
+    text-transform: uppercase;
+    font-family: 'Montserrat';
 }
 
 .education__roadmap {
@@ -1356,7 +1397,7 @@ header .outer__header .menu>a {
 }
 
 .education__roadmap .outer__education .inner>.media .desc>h6 {
-    margin-top: 0px;
+    margin-top: -15px;
     margin-bottom: 20px;
     font-size: 16px;
     line-height: 19px;
@@ -1516,7 +1557,7 @@ header .outer__header .menu>a {
     background-color: #EBF0FC;
     font-size: 10px;
     line-height: 22px;
-    font-weight: 800;
+    font-weight: 600;
     -webkit-transition: .3s ease all;
     transition: .3s ease all;
     color: var(--primary);
@@ -1535,7 +1576,9 @@ header .outer__header .menu>a {
     line-height: 22px;
     color: #212529;
     font-family: "Lato", sans-serif;
-    font-weight: 600
+    font-weight: 600;
+    min-height: 80px;
+    cursor: default;
 }
 
 .education__roadmap .outer__education .inner .roadmap .time__wrapper>.elem .right>ul {
@@ -1629,7 +1672,8 @@ header .outer__header .menu>a {
     line-height: 68px;
     font-weight: 800;
     text-transform: uppercase;
-    color: #000000
+    color: #000000;
+    font-family: 'Montserrat';
 }
 
 .education__roadmap .outer__education>.top>span {
@@ -1639,11 +1683,12 @@ header .outer__header .menu>a {
     line-height: 25px;
     color: var(--primary);
     letter-spacing: 3px;
-    font-weight: 600
+    font-weight: 500;
+    font-family: 'Montserrat';
 }
 
 .french__hero {
-    padding-top: 260px;
+    padding-top: 120px;
     padding-bottom: 120px;
     overflow: hidden
 }
@@ -1665,21 +1710,14 @@ header .outer__header .menu>a {
 }
 
 .french__hero .outer__french .media {
-    position: relative
-}
-
-.french__hero .outer__french .media>p {
-    font-size: 20px;
-    line-height: 30px;
-    color: var(--secondary);
-    font-weight: 300;
-    font-family: "Poppins", sans-serif;
-    text-align: center
+    position: relative;
+    min-width: 40%;
 }
 
 .french__hero .outer__french .media>img {
     position: relative;
-    z-index: 2
+    z-index: 2;
+    width: 100%;
 }
 
 .french__hero .outer__french .media>span {
@@ -1695,7 +1733,7 @@ header .outer__header .menu>a {
 }
 
 .french__hero .outer__french>.desc {
-    max-width: 740px
+    min-width: 63%;
 }
 
 .french__hero .outer__french>.desc .btn {
@@ -1728,7 +1766,8 @@ header .outer__header .menu>a {
     color: #FFFFFF;
     font-weight: 500;
     -webkit-transition: .4s ease all;
-    transition: .4s ease all
+    transition: .4s ease all;
+    font-family: "Montserrat", sans-serif;
 }
 
 .french__hero .outer__french>.desc .btn>a:hover {
@@ -1750,7 +1789,8 @@ header .outer__header .menu>a {
     line-height: 82px;
     color: var(--secondary);
     font-weight: 300;
-    padding-left: 130px
+    padding-left: 130px;
+    font-family: "Sriracha", cursive;
 }
 
 .french__hero .outer__french>.desc>h2 {
@@ -1824,7 +1864,8 @@ header .outer__header .menu>a {
     line-height: 25px;
     color: #022D4B;
     font-weight: 400;
-    margin-bottom: 20px
+    margin-bottom: 20px;
+    font-family: 'Montserrat'
 }
 
 .about__us .outer__about .desc>p:last-child {
@@ -1850,13 +1891,15 @@ header .outer__header .menu>a {
     font-size: 48px;
     line-height: 57px;
     margin-bottom: 5px;
-    font-weight: 400
+    font-weight: 400;
+    font-family: 'ABeeZee';
 }
 
 .about__us .outer__about>.top>span {
     font-size: 20px;
     line-height: 28px;
-    color: var(--primary)
+    color: var(--primary);
+    font-family: 'ABeeZee';
 }
 
 .about__us .container {
@@ -1896,7 +1939,8 @@ header .outer__header .menu>a {
     padding-right: 20px;
     padding-bottom: 60px;
     text-decoration: none;
-    position: relative
+    position: relative;
+    background-repeat: no-repeat;
 }
 
 .what__we--do .outer__what .grid>.elem>p {
@@ -1908,7 +1952,8 @@ header .outer__header .menu>a {
     color: #FFFFFF;
     text-transform: uppercase;
     position: relative;
-    z-index: 2
+    z-index: 2;
+    font-family: 'ABeeZee'
 }
 
 .what__we--do .outer__what .grid>.elem>span {
@@ -1917,7 +1962,9 @@ header .outer__header .menu>a {
     color: #FFFFFF;
     font-weight: 400;
     position: relative;
-    z-index: 2
+    z-index: 2;
+    text-transform: uppercase;
+    font-family: 'ABeeZee'
 }
 
 .what__we--do .outer__what .grid>.elem:nth-child(1) {
@@ -2044,7 +2091,8 @@ header .outer__header .menu>a {
     font-size: 20px;
     line-height: 24px;
     color: var(--primary);
-    font-weight: 400
+    font-weight: 400;
+    font-family: 'ABeeZee'
 }
 
 .what__we--do .outer__what>.top>h2 {
@@ -2053,7 +2101,8 @@ header .outer__header .menu>a {
     font-size: 48px;
     line-height: 60px;
     color: #000000;
-    font-weight: 400
+    font-weight: 400;
+    font-family: 'ABeeZee'
 }
 
 .what__we--do .container {
@@ -2129,7 +2178,8 @@ header .outer__header .menu>a {
     font-size: 20px;
     line-height: 24px;
     color: var(--primary);
-    font-weight: 400
+    font-weight: 400;
+    font-family: "ABeeZee", sans-serif;
 }
 
 .properties__wrapper .outer__properties .top .left>h2 {
@@ -2137,7 +2187,8 @@ header .outer__header .menu>a {
     font-size: 48px;
     line-height: 57px;
     margin-bottom: 5px;
-    font-weight: 400
+    font-weight: 400;
+    font-family: "ABeeZee", sans-serif;
 }
 
 .properties__wrapper .container {
@@ -2256,15 +2307,20 @@ header .outer__header .menu>a {
     line-height: 32px;
     color: #FFFFFF;
     position: relative;
-    z-index: 2
+    z-index: 2;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-family: "Acme", sans-serif;
 }
 
 .slider__wrapper .elem__slide>a>span {
     font-size: 14px;
     line-height: 18px;
     color: #FFFFFF;
+    text-transform: uppercase;
+    font-family: "Acme", sans-serif;
     position: relative;
-    z-index: 2
+    z-index: 2;
 }
 
 .clients__wrapper .outer__clients .box .elem img {
@@ -2342,7 +2398,9 @@ header .outer__header .menu>a {
     justify-content: center;
     padding: 25px 15px;
     width: 100%;
-    height: 100%
+    height: 100%;
+    background: #ffffff26;
+    backdrop-filter: blur(10px);
 }
 
 .modal__wrapper>.inner__modal .modal__box {
@@ -2524,10 +2582,6 @@ header .outer__header .menu>a {
     border-radius: 250px
 }
 
-.what__we--do .outer__what .grid>.elem>span {
-    text-transform: uppercase
-}
-
 .discover__wrapper {
     padding-bottom: 150px
 }
@@ -2545,12 +2599,13 @@ header .outer__header .menu>a {
 }
 
 .discover__wrapper .outer__discover .right__side {
-    width: 60%;
+    width: 45%;
     background-color: #FEF3E9;
-    margin-top: 170px;
+    margin-top: 80px;
     right: 0;
-    padding: 100px 50px 50px 200px;
+    padding: 40px 50px 40px 110px;
     position: absolute;
+    font-family: "Alef", sans-serif;
 }
 
 .discover__wrapper .outer__discover .right__side>p {
@@ -2563,16 +2618,22 @@ header .outer__header .menu>a {
 
 .discover__wrapper .outer__discover .left__side {
     width: 60%;
-    padding: 15px 90px 60px 15px;
+    padding: 15px 90px 40px 15px;
     position: relative;
     z-index: 2;
-    background-color: #E7ECF0
+    background-color: #E7ECF0;
+    font-size: 70px;
+    font-weight: 400;
+    text-align: left;
+    border-right: 2px solid white;
+    border-bottom: 2px solid white;
 }
 
 .discover__wrapper .outer__discover .left__side>img {
     position: absolute;
-    right: 22px;
-    bottom: 60px
+    right: 20px;
+    bottom: 30px;
+    width: 50px;
 }
 
 .discover__wrapper .outer__discover .left__side>p {
@@ -2583,7 +2644,7 @@ header .outer__header .menu>a {
     text-transform: uppercase;
     display: flex;
     font-size: 50px;
-    font-weight: 700;
+    font-weight: 400;
     gap: 15px;
 }
 
@@ -2593,7 +2654,7 @@ header .outer__header .menu>a {
 }
 
 .discover__wrapper .outer__discover .left__side>p:first-child {
-    margin: 30px 40px 20px;
+    margin: 0px 40px 0px;
 }
 
 .capabilities {
@@ -2619,11 +2680,6 @@ header .outer__header .menu>a {
     position: relative;
     width: 100%;
     margin-top: -80px
-}
-
-.capabilities .outer__capabilities .outer .active__element .element {
-    position: relative;
-    z-index: 2
 }
 
 .capabilities .outer__capabilities .outer .active__element .element .desc>h6 {
@@ -2675,9 +2731,10 @@ header .outer__header .menu>a {
 .capabilities .outer__capabilities .outer .active__element .element {
     background-color: var(--primary);
     border-radius: 56px;
-    -webkit-box-shadow: 2px 2px rgba(0, 0, 0, 0.25);
-    box-shadow: 2px 2px rgba(0, 0, 0, 0.25);
-    padding: 65px 30px
+    padding: 65px 30px;
+    position: relative;
+    z-index: 2;
+    box-shadow: 1.83px 1.83px 9.16px 0.92px #00000040;
 }
 
 .capabilities .outer__capabilities .outer .switcher {
@@ -2734,7 +2791,9 @@ header .outer__header .menu>a {
     line-height: 32px;
     font-weight: 500;
     color: var(--secondary);
-    font-family: "Futura", sans-serif
+    font-family: "Futura", sans-serif;
+    transition: all .3s ease;
+    min-width: max-content !important;
 }
 
 .capabilities .outer__capabilities .outer .switcher .elem:last-child {
@@ -2787,7 +2846,7 @@ header .outer__header .menu>a {
     left: 0px;
     top: 0px;
     width: 100%;
-    height: 100%;
+    height: 90%;
     z-index: 1;
     background-color: white;
     background-repeat: no-repeat !important;
@@ -2795,7 +2854,10 @@ header .outer__header .menu>a {
     background-size: cover !important;
     backdrop-filter: blur(20px);
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 110%, 0 19%);
-    clip-path: polygon(0 0, 100% 0, 100% 110%, 0 19%)
+    /* clip-path: polygon(0 0, 100% 0, 100% 110%, 0 19%);
+     */
+    clip-path: polygon(0% 0%, 100% 0%, 100% 110%, 0% 25%);
+    background-color: white !important;
 }
 
 .hero__section .image .top__part {
@@ -2889,7 +2951,25 @@ header .outer__header .menu>a {
     position: relative;
 }
 
-.hero__section .btns>a.current {
+.hero__section .btns>a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    display: block;
+    width: 100vw;
+    transition: all .4s ease;
+}
+
+.hero__section .btns>a span,
+i {
+    z-index: 2;
+    position: relative;
+}
+
+.hero__section .btns>a.current,
+.hero__section .btns>a.current::before {
     color: var(--primary);
     border-color: var(--primary);
     background-color: #FEF3E9;
@@ -2909,10 +2989,6 @@ header .outer__header .menu>a {
 
 .container {
     max-width: 1230px
-}
-
-.discover__wrapper .outer__discover .left__side {
-    position: relative
 }
 
 .capabilities .outer__capabilities .outer .switcher .elem.slick-current>p {
@@ -3080,19 +3156,14 @@ header .outer__header>a img {
     padding: 0;
 }
 
-.capabilities .outer__capabilities .outer .switcher .elem>p {
-    transition: all .3s ease;
-    min-width: max-content !important;
-}
-
 /* ------------------------ */
 /* Slick */
 /* Slider */
 /* .slick-loading .slick-list {
     background: #fff url('./ajax-loader.gif') center center no-repeat;
-} */
-/* Icons */
-/* @font-face {
+}
+ 
+@font-face {
     font-family: 'slick';
     font-weight: normal;
     font-style: normal;
@@ -3256,4 +3327,421 @@ header .outer__header>a img {
 .slick-dots li.slick-active button:before {
     opacity: .75;
     color: black;
+}
+
+/* ------- */
+.owner-section-main {
+    overflow: hidden;
+    width: 100%;
+}
+
+.owner-section {
+    width: 100%;
+    max-width: 1350px;
+    margin: 0 auto;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.owner-section::before {
+    content: '';
+    width: 50%;
+    height: 3px;
+    right: 10%;
+    top: 100px;
+    position: absolute;
+    border-bottom: 2px solid var(--primary);
+}
+
+.owner-section::after {
+    content: '';
+    width: 50%;
+    height: 2px;
+    left: 0;
+    bottom: 0;
+    border-bottom: 2px solid var(--primary);
+    position: absolute;
+}
+
+.bg_imgs {
+    position: absolute;
+    inset: 0;
+    opacity: .3;
+}
+
+.bg_imgs .img1 {
+    position: absolute;
+    width: 350px;
+    left: -50px;
+    top: 20px;
+    -webkit-user-drag: none;
+    user-select: none;
+}
+
+.bg_imgs .img2 {
+    position: absolute;
+    width: 600px;
+    right: -400px;
+    top: 230px;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+.owner-container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 200px 0 50px;
+    position: relative;
+}
+
+.owner_rects {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: max-content;
+    margin: 0 auto;
+}
+
+.owner_rects::before {
+    content: '';
+    width: 203px;
+    height: 127px;
+    left: -210px;
+    display: block;
+    position: absolute;
+    background: var(--secondary);
+    z-index: 2;
+    bottom: 20px;
+}
+
+.owner_rects::after {
+    content: '';
+    width: 358px;
+    height: 384px;
+    display: block;
+    left: -100px;
+    position: absolute;
+    background: var(--primary);
+}
+
+.owner_rects img {
+    width: 406px;
+    height: 288px;
+    width: 500px;
+    border: 10px solid white;
+    z-index: 2;
+    position: relative;
+    top: 30px;
+    left: 100px;
+    box-shadow: 2.13px 2.13px 10.65px 1.07px #00000040;
+}
+
+.owner-details {
+    margin-top: 100px;
+}
+
+.owner-details::before {
+    width: 2px;
+    height: 500px;
+    content: '';
+    border-left: 2px solid var(--primary);
+    position: absolute;
+    left: -50px;
+    bottom: 150px;
+}
+
+.owner-details .info {
+    display: flex;
+    gap: 40px;
+    padding-left: 100px;
+}
+
+.owner-details .img img {
+    width: 273px;
+    height: 380px;
+    top: 967px;
+    left: 290px;
+    gap: 0px;
+    box-shadow: 4px 4px 10px 4px #00000040;
+    border: 10px solid #FFFFFF
+}
+
+.owner-details>h1 {
+    font-family: "Adamina", serif;
+    font-size: 75px;
+    font-weight: 400;
+    line-height: 60px;
+    text-transform: uppercase;
+}
+
+.owner-details .text h3 {
+    font-family: 'Montserrat';
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 30px;
+}
+
+.owner-details .text span {
+    font-family: 'Montserrat';
+    font-size: 24px;
+    font-weight: 400;
+    margin: 0px 0 0 20px;
+    position: relative;
+    top: -20px;
+    text-align: left;
+}
+
+.owner-details .text p {
+    font-family: 'Montserrat';
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 25px;
+    text-align: left;
+}
+
+/* ---- */
+.consulting-headings h1 {
+    font-family: 'Montserrat';
+    font-size: 70px;
+    font-weight: 800;
+    line-height: 68px;
+    color: var(--primary);
+    margin: 50px 0 25px;
+}
+
+.consulting-headings .cons_desc {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.consulting-headings .cons_desc::before {
+    content: '';
+    width: 30px;
+    margin-left: 20px;
+    height: 5px;
+    border-top: 2px solid #808080;
+}
+
+.consulting-headings .cons_desc span {
+    font-family: 'Montserrat';
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: left;
+    padding-left: 85px;
+}
+
+.consulting-headings .cons_desc img {
+    position: absolute;
+    width: 60px;
+    top: -24px;
+    left: 65px;
+}
+
+.company_details-container {
+    display: flex;
+    column-gap: 100px;
+    margin-top: 70px;
+}
+
+.company_contact {
+    min-width: max-content;
+    border-right: 2px solid #0B3E6336;
+    padding-right: 60px;
+}
+
+.company_contact h3 {
+    font-family: 'Montserrat';
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    color: #022D4B;
+}
+
+.company_contact ul,
+.company_contact ul li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.company_contact ul li p {
+    font-family: 'Montserrat';
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    color: #022D4B;
+    margin: 0;
+    padding: 0;
+}
+
+.company_contact ul li a {
+    font-family: 'Montserrat';
+    padding: 0;
+    display: block;
+    margin: 1px 0 7px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 25px;
+    color: #022D4B;
+    text-decoration: none;
+    max-width: max-content;
+}
+
+/* --- */
+.company_details {}
+
+.company_details>h1 {
+    font-family: "Roboto Flex", sans-serif;
+    ;
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 57.6px;
+    color: #0B3E63;
+    margin: 0 0 20px;
+}
+
+.company_details>p {
+    font-family: 'Roboto Flex';
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 28.8px;
+    text-align: left;
+}
+
+ul.company_features {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 50px 0;
+}
+
+ul.company_features li {
+    /* width: 25px; */
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+ul.company_features li>div {
+    width: 50px;
+    aspect-ratio: 1;
+    background: #F5F7F9;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ul.company_features li>div img {
+    width: 25px;
+}
+
+ul.company_features li>span {
+    display: block;
+    font-family: 'Libre Franklin';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22.39px;
+    text-align: left;
+    color: #0B3E63;
+    max-width: 120px;
+}
+
+.consulting_hero-section {
+    border-bottom: 36px solid #ED7E1B14;
+    padding-bottom: 100px;
+    margin-bottom: 100px;
+}
+
+/* --- */
+.company_logos-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    padding: 0;
+    justify-content: center;
+}
+
+.company_logos-container li {
+    width: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.company_logos-container li div {
+    width: 140px;
+    aspect-ratio: 1;
+    margin: 0;
+    padding: 0;
+    border-radius: 50%;
+    overflow: hidden;
+    background: #eae8f3;
+    background: #ED7E1B4F;
+}
+
+.company_logos-container li div img {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.company_logos-container li h3 {
+    margin: 10px 0 5px;
+    padding: 0;
+    font-family: 'Poppins';
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 42px;
+    text-align: center;
+    color: #252525;
+}
+
+.company_logos-container li span {
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+    text-align: center;
+    color: #0B3E63;
+}
+
+#loading-container {
+    position: fixed;
+    min-height: 100vh;
+    height: 100vh;
+    z-index: 999;
+    background: #ed7e1b;
+    /* background: #4c2606; */
+    display: none;
+    align-items: center;
+    justify-content: center;
+    transition: all .8s ease;
+}
+
+#loading-container img {
+    width: 100%;
+}
+
+@media (max-width:1000px) {
+    #loading-container img {
+        transform: scale(1.5);
+    }
+}
+
+@media (max-width:768px) {
+    #loading-container img {
+        transform: scale(2);
+    }
+}
+
+@media (max-width:500px) {
+    #loading-container img {
+        transform: scale(3);
+    }
 }

@@ -8,20 +8,26 @@
     <title>FhFrench</title>
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon" />
-
-    <!-- Google Fonts CDN -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900|Adamina|Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900|Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900|Bebas+Neue&display=swap"
-      rel="stylesheet" />
-
-    <!-- CSS Global Theme File -->
-    <link rel="stylesheet" href="css/slick-theme.css" />
+      rel="shortcut icon"
+      href="assets/images/logos/logo-square.svg"
+      type="image/x-icon" />
 
     <!-- Custom CSS File -->
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- Resonsive CSS -->
+    <link rel="stylesheet" href="assets/css/responsive.css" />
   </head>
   <body>
+    <!-- ################# -->
+    <!-- Loading Animation -->
+    <!-- ################# -->
+    <div id="loading-container">
+      <img src="assets/images/svg/loading.gif" alt="Loading Animation" />
+    </div>
+    <!-- ################# -->
+    <!-- Loading Animation -->
+    <!-- ################# -->
     <!-- -------------------------- -->
     <!-- Header Section Starts Here -->
     <!-- -------------------------- -->
@@ -39,10 +45,10 @@
           <a href="owner.html">ACADEMIC</a>
         </li>
         <li>
-          <a href="french.html">DEVELOPMENT</a>
+          <a href="fh-french.html" class="active">DEVELOPMENT</a>
         </li>
         <li>
-          <a href="contactus.html">CONSULTING</a>
+          <a href="consulting.html">CONSULTING</a>
         </li>
       </ul>
     </div>
@@ -53,7 +59,7 @@
         <div class="outer__header">
           <!-- Logo -->
           <a href="#">
-            <img src="img/logohead.svg" alt="logohead" />
+            <img src="assets/images/logos/logo-square.svg" alt="Logo" />
           </a>
           <!-- Floating overlay toggle triggle btn -->
           <div class="menu">
@@ -91,7 +97,7 @@
               <span>FH FRENCH CO. INC</span>
             </h2>
             <!-- Name -->
-            <h6>By Jen Cookke</h6>
+            <h6>Developed by Jen Cookke</h6>
             <!-- Description -->
             <p>
               FH French Co. Inc is a full service real estate firm actively
@@ -108,11 +114,7 @@
 
           <!-- FhFrench Image -->
           <div class="media">
-            <img src="img/frenchimage.svg" alt="frenchimage" />
-            <span>
-              <img src="img/rects.svg" alt="rects" />
-            </span>
-            <p>65 Years Anniversery</p>
+            <img src="assets/images/svg/frenchHeroImg.png" alt="frenchimage" />
           </div>
         </div>
       </div>
@@ -127,49 +129,109 @@
     <!-- ####### -->
     <!-- ####### -->
 
-    <!-- -------------------------------- -->
-    <!-- Clients Logo Section Starts Here -->
-    <!-- -------------------------------- -->
+    <!-- ----------------------------- -->
+    <!-- Portfolio Section Starts Here -->
+    <!-- ----------------------------- -->
 
-    <div class="clients__wrapper">
+    <div class="properties__wrapper">
       <div class="container">
-        <!-- Client Logos Wrapper -->
-        <div class="outer__clients">
-          <span>Past Clients</span>
-          <div class="box">
-            <!-- Client Logo -->
-            <div class="elem">
-              <img src="img/client1.png" alt="client" />
-            </div>
-
-            <!-- Client Logo -->
-            <div class="elem">
-              <img
-                src="img/client2.png"
-                alt="client"
-                style="max-height: 70px" />
-            </div>
-
-            <!-- Client Logo -->
-            <div class="elem">
-              <img
-                src="img/client3.png"
-                alt="client"
-                style="max-height: 90px" />
-            </div>
-
-            <!-- Client Logo -->
-            <div class="elem">
-              <img src="img/client4.png" alt="client" />
+        <!-- Heading and Titles -->
+        <div class="outer__properties">
+          <div class="top">
+            <div class="left">
+              <h2>Properties Developed</h2>
+              <span>Over $1 Million in projects completed</span>
             </div>
           </div>
         </div>
       </div>
+      <!-- Portfolio Items Container -->
+      <div class="slider__wrapper">
+        <!-- Portfolio Item -->
+        <div class="elem__slide">
+          <a
+            href="#"
+            style="background: url('assets/images/building-images/4.webp')">
+            <p>1407 South County Trail</p>
+            <span>East Greenwich, RI</span>
+          </a>
+        </div>
+
+        <!-- Portfolio Item -->
+        <div class="elem__slide">
+          <a
+            href="#"
+            style="background: url('assets/images/building-images/5.webp')">
+            <p>1454 South County Trail </p>
+            <span>East Greenwich, RI</span>
+          </a>
+        </div>
+
+        <!-- Portfolio Item -->
+        <div class="elem__slide">
+          <a
+            href="#"
+            style="background: url('assets/images/building-images/6.webp')">
+            <p>1407 South County Trail</p>
+            <span>East Greenwich, RI</span>
+          </a>
+        </div>
+
+        <!-- Portfolio Item -->
+        <div class="elem__slide">
+          <a
+            href="#"
+            style="background: url('assets/images/building-images/7.webp')">
+            <p>1454 South County Trail </p>
+            <span>East Greenwich, RI</span>
+          </a>
+        </div>
+
+        <!-- Portfolio Item -->
+        <div class="elem__slide">
+          <a
+            href="#"
+            style="background: url('assets/images/building-images/8.webp')">
+            <p>1407 South County Trail</p>
+            <span>East Greenwich, RI</span>
+          </a>
+        </div>
+
+        <!-- Portfolio Item -->
+        <div class="elem__slide">
+          <a
+            href="#"
+            style="background: url('assets/images/building-images/9.webp')">
+            <p>1454 South County Trail </p>
+            <span>East Greenwich, RI</span>
+          </a>
+        </div>
+
+        <!-- Portfolio Item -->
+        <div class="elem__slide">
+          <a
+            href="#"
+            style="background: url('assets/images/building-images/10.webp')">
+            <p>1407 South County Trail</p>
+            <span>East Greenwich, RI</span>
+          </a>
+        </div>
+
+        <!-- Portfolio Item -->
+        <div class="elem__slide">
+          <a
+            href="#"
+            style="background: url('assets/images/building-images/11.webp')">
+            <p>1454 South County Trail </p>
+            <span>East Greenwich, RI</span>
+          </a>
+        </div>
+      </div>
     </div>
 
-    <!-- ------------------------------ -->
-    <!-- Clients Logo Section Ends Here -->
-    <!-- ------------------------------ -->
+    <!-- --------------------------- -->
+    <!-- Portfolio Section Ends Here -->
+    <!-- --------------------------- -->
 
     <!-- ####### -->
     <!-- ####### -->
@@ -241,99 +303,6 @@
     <!-- ####### -->
     <!-- ####### -->
 
-    <!-- ----------------------------- -->
-    <!-- Portfolio Section Starts Here -->
-    <!-- ----------------------------- -->
-
-    <div class="properties__wrapper">
-      <div class="container">
-        <!-- Heading and Titles -->
-        <div class="outer__properties">
-          <div class="top">
-            <div class="left">
-              <h2>Properties Developed</h2>
-              <span>Over $1 Million in projects completed</span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Portfolio Items Container -->
-      <div class="slider__wrapper">
-        <!-- Portfolio Item -->
-        <div class="elem__slide">
-          <a href="#" style="background: url('img/product1.webp')">
-            <p>1407 South County Trail</p>
-            <span>East Greenwich, RI</span>
-          </a>
-        </div>
-
-        <!-- Portfolio Item -->
-        <div class="elem__slide">
-          <a href="#" style="background: url('img/product2.webp')">
-            <p>1454 South County Trail </p>
-            <span>East Greenwich, RI</span>
-          </a>
-        </div>
-
-        <!-- Portfolio Item -->
-        <div class="elem__slide">
-          <a href="#" style="background: url('img/product1.webp')">
-            <p>1407 South County Trail</p>
-            <span>East Greenwich, RI</span>
-          </a>
-        </div>
-
-        <!-- Portfolio Item -->
-        <div class="elem__slide">
-          <a href="#" style="background: url('img/product2.webp')">
-            <p>1454 South County Trail </p>
-            <span>East Greenwich, RI</span>
-          </a>
-        </div>
-
-        <!-- Portfolio Item -->
-        <div class="elem__slide">
-          <a href="#" style="background: url('img/product1.webp')">
-            <p>1407 South County Trail</p>
-            <span>East Greenwich, RI</span>
-          </a>
-        </div>
-
-        <!-- Portfolio Item -->
-        <div class="elem__slide">
-          <a href="#" style="background: url('img/product2.webp')">
-            <p>1454 South County Trail </p>
-            <span>East Greenwich, RI</span>
-          </a>
-        </div>
-
-        <!-- Portfolio Item -->
-        <div class="elem__slide">
-          <a href="#" style="background: url('img/product1.webp')">
-            <p>1407 South County Trail</p>
-            <span>East Greenwich, RI</span>
-          </a>
-        </div>
-
-        <!-- Portfolio Item -->
-        <div class="elem__slide">
-          <a href="#" style="background: url('img/product2.webp')">
-            <p>1454 South County Trail </p>
-            <span>East Greenwich, RI</span>
-          </a>
-        </div>
-      </div>
-    </div>
-
-    <!-- --------------------------- -->
-    <!-- Portfolio Section Ends Here -->
-    <!-- --------------------------- -->
-
-    <!-- ####### -->
-    <!-- ####### -->
-    <!-- ####### -->
-    <!-- ####### -->
-
     <!-- -------------------------------- -->
     <!-- Our Services Section Starts Here -->
     <!-- -------------------------------- -->
@@ -354,7 +323,7 @@
               href="#"
               class="elem"
               data-id="what1"
-              style="background: url('img/what1.webp')">
+              style="background: url('assets/images/building-images/7.webp')">
               <p>Development</p>
               <span>development for commercial buildings</span>
             </a>
@@ -364,7 +333,7 @@
               href="#"
               class="elem"
               data-id="what2"
-              style="background: url('img/what2.webp')">
+              style="background: url('assets/images/building-images/8.webp')">
               <p>
                 Asset
                 <br />
@@ -378,7 +347,7 @@
               href="#"
               class="elem"
               data-id="what3"
-              style="background: url('img/what3.webp')">
+              style="background: url('assets/images/building-images/10.webp')">
               <p>
                 investment
                 <br />
@@ -392,7 +361,7 @@
               href="#"
               class="elem"
               data-id="what4"
-              style="background: url('img/what4.webp')">
+              style="background: url('assets/images/building-images/9.webp')">
               <p>brokerage & Leasing</p>
               <span>Expertise in Brokerage and Leasing Services</span>
             </a>
@@ -402,7 +371,7 @@
               href="#"
               class="elem"
               data-id="what5"
-              style="background: url('img/what5.webp')">
+              style="background: url('assets/images/building-images/11.webp')">
               <p>Construction services</p>
               <span>Building Success for Comprehensive Constructions</span>
             </a>
@@ -430,14 +399,14 @@
         <div class="modal__box">
           <!-- Popup Close X button -->
           <a href="#" class="close__popup">
-            <img src="img/close.png" alt="close" />
+            <img src="assets/images/svg/close.png" alt="close" />
           </a>
 
           <!-- --------------- -->
           <!-- Popup Thumbnail -->
           <div
             class="element__service orange what1"
-            style="background: url('img/what1.webp')"
+            style="background: url('assets/images/building-images/7.webp')"
             style="display: none">
             <h6>Development</h6>
             <p>development for commercial buildings</p>
@@ -472,7 +441,7 @@
           <!-- Popup Thumbnail -->
           <div
             class="element__service blue what2"
-            style="background: url('img/what2.webp')"
+            style="background: url('assets/images/building-images/8.webp')"
             style="display: none">
             <h6>Asset management</h6>
             <p>strategic management</p>
@@ -507,7 +476,7 @@
           <!-- Popup Thumbnail -->
           <div
             class="element__service lightblue what3"
-            style="background: url('img/what3.webp')"
+            style="background: url('assets/images/building-images/10.webp')"
             style="display: none">
             <h6>INVESTMENT management</h6>
             <p>nurturing wealth & growth</p>
@@ -542,7 +511,7 @@
           <!-- Popup Thumbnail -->
           <div
             class="element__service orange what4"
-            style="background: url('img/what4.webp')"
+            style="background: url('assets/images/building-images/9.webp')"
             style="display: none">
             <h6>brokerage & leasing</h6>
             <p>expertise in brokerage and leasing services</p>
@@ -577,7 +546,7 @@
           <!-- Popup Thumbnail -->
           <div
             class="element__service blue what5"
-            style="background: url('img/what5.webp')"
+            style="background: url('assets/images/building-images/11.webp')"
             style="display: none">
             <h6>construction services</h6>
             <p>building success for comprehensive constructions</p>
@@ -624,7 +593,7 @@
     <!-- Listing Lease Slider Container Ends Here -->
     <!-- ---------------------------------------- -->
 
-    <div class="properties__wrapper">
+    <div class="properties__wrapper" style="display: none">
       <div class="container">
         <div class="outer__properties">
           <!-- Heading and Title -->
@@ -733,12 +702,12 @@
             <!-- Footer Info -->
             <div class="left">
               <a href="#">
-                <img src="img/logo.png" alt="log" />
+                <img src="assets/images/logos/logo-square.svg" alt="log" />
               </a>
               <ul>
-                <li>99 Address St, local Rl 02860</li>
-                <li>(401-999-9999)</li>
-                <li>Business Email@gmail.com</li>
+                <li> <a href="#"> 99 Address St, local Rl 02860</a> </li>
+                <li> <a href="#"> (401-999-9999)</a> </li>
+                <li> <a href="#"> Business Email@gmail.com</a></li>
               </ul>
             </div>
 
@@ -746,13 +715,19 @@
             <div class="right">
               <ul>
                 <li>
-                  <a href="#"><img src="img/soc1.svg" alt="soc" /></a>
+                  <a href="#">
+                    <img src="assets/images/svg/facebook-icon.svg" alt="soc" />
+                  </a>
                 </li>
                 <li>
-                  <a href="#"><img src="img/soc2.svg" alt="soc" /></a>
+                  <a href="#">
+                    <img src="assets/images/svg/twitter-icon.svg" alt="soc" />
+                  </a>
                 </li>
                 <li>
-                  <a href="#"><img src="img/soc3.svg" alt="soc" /></a>
+                  <a href="#">
+                    <img src="assets/images/svg/pinterest-icon.svg" alt="soc" />
+                  </a>
                 </li>
               </ul>
             </div>
@@ -762,7 +737,9 @@
           <div class="bottom__footer">
             <ul>
               <li>&copy; Copyright 2023</li>
-              <li>FH FRENCH</li>
+              <li>
+                <a href="#">FH FRENCH</a>
+              </li>
               <li>All rights reserved</li>
             </ul>
           </div>
@@ -776,10 +753,10 @@
   </body>
 
   <!-- JavaScript CDNs -->
-  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
   <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
 
   <!-- JavaScript Local Files -->
-  <script src="js/slick.min.js"></script>
-  <script src="js/script.js"></script>
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/slick.min.js"></script>
+  <script src="assets/js/script.js"></script>
 </html>
