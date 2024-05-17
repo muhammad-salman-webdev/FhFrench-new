@@ -1714,6 +1714,18 @@
     .hero__section .image .top__part>span {
         font-size: 28px;
     }
+
+    header .outer__header .menu>a {
+        min-height: 90px;
+        width: 90px;
+        font-size: 20px;
+        max-width: 90px;
+        min-width: 0px;
+    }
+
+    .s_hero-section {
+        min-height: 500px;
+    }
 }
 
 @media (max-width: 600px) {
@@ -1759,6 +1771,10 @@
 
     .container:has(.outer__header) {
         padding: 0 20px;
+    }
+
+    .s-hero_content p {
+        padding: 0 2% 0 5%;
     }
 }
 
@@ -1809,38 +1825,22 @@
     .education__roadmap {
         padding-bottom: 45px
     }
+}
 
-    .complex__logo>a .spacer {
-        display: none
+@media (max-width: 480px) {
+    .complex__logo>a>img {
+        max-width: 120px;
     }
 
-    .complex__logo>a {
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-        flex-direction: column;
-        -webkit-box-align: start;
-        -ms-flex-align: start;
-        align-items: flex-start
+    .complex__logo>a .spacer {
+        min-height: 50px;
     }
 
     .complex__logo>a .desc {
         font-size: 12px;
-        font-weight: 700;
-        line-height: 1.2;
+        line-height: 18px;
     }
 
-    .hero__section .image .top__part>span {
-        position: static;
-    }
-
-    .complex__logo:has(.desc) img {
-        width: 120px;
-        margin: 0 0 10px;
-    }
-}
-
-@media (max-width: 480px) {
     .images__wrapper .image {
         padding-top: 260px !important
     }

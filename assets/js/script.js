@@ -247,16 +247,16 @@ function showLoadingAnimation() {
 
   // Display the loading animation container
   animElem.style.display = "flex";
-  document.body.style.overflowY = "hidden";
+  // document.body.style.overflowY = "hidden";
 
   // Hide the loading animation container after 3 seconds
   setTimeout(function () {
     animElem.style.opacity = "0";
     setTimeout(function () {
       animElem.style.display = "none";
-      document.body.style.overflowY = "initial";
+      // document.body.style.overflowY = "initial";
     }, 500);
-  }, 2700);
+  }, 2500);
 }
 
 // #######
@@ -287,3 +287,6 @@ if (animateOnEveryVisit) {
 } else {
   document.addEventListener("DOMContentLoaded", shouldShowAnimation());
 }
+
+showLoadingAnimation();
+// Hero Section Animation

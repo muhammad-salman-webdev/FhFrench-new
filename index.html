@@ -96,26 +96,41 @@
     <!-- Hero Section Starts Here -->
     <!-- ------------------------ -->
 
-    <div class="hero__section">
-      <!-- On Hover active Images -->
-      <div class="images__wrapper">
-        <!-- Image Item -->
-        <div
-          class="image image2"
-          style="background: url('assets/images/building-images/14.jpg')">
-          <div class="btn">
-            <a href="fh-french.html">DEVELOPMENT</a>
-          </div>
-        </div>
-
-        <!-- Image Item -->
-        <div
-          class="image image1 no__image"
-          style="background: url('assets/images/onwer/1.webp'); display: none">
-          <img src="assets/images/onwer/4.webp" alt="imagefloat" />
-
+    <section class="s_hero-section">
+      <!-- Buttons -->
+      <div class="s_hero-btns">
+        <ul>
+          <!-- Btn -->
+          <li data-section-btn="academic" class="active">
+            <a href="owner.html">
+              <span>Academic</span>
+              <i class="fa-solid fa-right-long"></i>
+            </a>
+          </li>
+          <!-- Btn -->
+          <li data-section-btn="development">
+            <a href="fh-french.html">
+              <span>Development</span>
+              <i class="fa-solid fa-right-long"></i>
+            </a>
+          </li>
+          <!-- Btn -->
+          <li data-section-btn="counsulting">
+            <a href="consulting.html">
+              <span>Counsulting</span>
+              <i class="fa-solid fa-right-long"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- Images -->
+      <div class="s_hero-images-container">
+        <!-- Btn Image Container -->
+        <div class="s_hero-image-container active" data-section="academic">
+          <!-- Onwer -->
+          <img src="assets/images/onwer/4.webp" class="s_owner-img" alt="#" />
           <!-- Content -->
-          <div class="top__part">
+          <div class="s-hero_content">
             <h2>Jen Cookke:</h2>
             <p>
               The fusion of two perspectives, acadamia for innovation and robust
@@ -124,58 +139,21 @@
             </p>
             <span> “A Scholarly Practitioner” </span>
           </div>
-          <div class="btn">
-            <a href="owner.html">ACADEMIC</a>
-          </div>
         </div>
-
-        <!-- Image Item -->
+        <!-- Btn Image Container -->
         <div
-          class="image image3 no__image"
-          style="background: url('assets/images/onwer/1.webp'); display: none">
-          <img src="assets/images/onwer/4.webp" alt="imagefloat" />
-
-          <!-- Content -->
-          <div class="top__part">
-            <h2>Jen Cookke:</h2>
-            <p>
-              The fusion of two perspectives, acadamia for innovation and robust
-              strategic thinking with the practical and experiential deep
-              knowledge of organizational and team success
-            </p>
-            <span> “A Scholarly Practitioner” </span>
-          </div>
-          <div class="btn">
-            <a href="consulting.html">CONSULTING</a>
-          </div>
+          class="s_hero-image-container"
+          style="background-image: url('assets/images/building-images/1.webp')"
+          data-section="development">
+        </div>
+        <!-- Btn Image Container -->
+        <div
+          class="s_hero-image-container"
+          style="background-image: url('assets/images/building-images/2.webp')"
+          data-section="counsulting">
         </div>
       </div>
-
-      <!-- On Hover Images Trigger btns -->
-      <div class="container">
-        <div class="outer__hero">
-          <div class="btns">
-            <!-- Btn -->
-            <a href="owner.html" data-image="image1">
-              <span> ACADEMIC </span>
-              <i class="fa-solid fa-right-long"></i>
-            </a>
-
-            <!-- Btn -->
-            <a href="fh-french.html" class="current" data-image="image2">
-              <span> DEVELOPMENT </span>
-              <i class="fa-solid fa-right-long"></i>
-            </a>
-
-            <!-- Btn -->
-            <a href="consulting.html" data-image="image3">
-              <span> CONSULTING </span>
-              <i class="fa-solid fa-right-long"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
+    </section>
 
     <!-- ----------------------- -->
     <!--  Hero Section Ends Here -->
@@ -457,4 +435,27 @@
   <script src="assets/js/jquery.min.js"></script>
   <script src="assets/js/slick.min.js"></script>
   <script src="assets/js/script.js"></script>
+  <script>
+    const sectionBtns = document.querySelectorAll("li[data-section-btn]");
+    const section = document.querySelectorAll("[data-section]");
+
+    sectionBtns.forEach((btn, index) => {
+      btn.addEventListener("mouseenter", () => {
+        const identifier = btn.getAttribute("data-section-btn");
+        // Manuplating with btns
+        sectionBtns.forEach((_btn) => {
+          _btn.classList.remove("active");
+        });
+        btn.classList.add("active");
+
+        // Manuplating with sections
+        section.forEach((_section) => {
+          _section.classList.remove("active");
+        });
+        document
+          .querySelector(`[data-section="${identifier}"]`)
+          .classList.add("active");
+      });
+    });
+  </script>
 </html>
