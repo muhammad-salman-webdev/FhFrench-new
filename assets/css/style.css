@@ -3716,6 +3716,7 @@ ul.company_features li>span {
 #loading-container {
     position: fixed;
     min-height: 100vh;
+    min-width: 100vw;
     height: 100vh;
     z-index: 999;
     background: #ed7e1b;
