@@ -236,6 +236,8 @@ $(document).ready(function () {
 });
 
 // Loading Animation
+const allElems = document.querySelector("body > main");
+allElems.style.opacity = 0;
 
 const animElem = document.getElementById("loading-container");
 function showLoadingAnimation() {
@@ -248,6 +250,8 @@ function showLoadingAnimation() {
   // Display the loading animation container
   animElem.style.display = "flex";
   // document.body.style.overflowY = "hidden";
+  allElems.style.opacity = 1;
+  document.body.style.background = "white";
 
   // Hide the loading animation container after 3 seconds
   setTimeout(function () {
